@@ -23,7 +23,6 @@
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/gastos/mios}">Mis Gastos</a>
                 </li>
-                <!-- Ver todos los gastos (solo ADMIN) -->
                 <li class="nav-item" sec:authorize="hasRole('ADMIN')">
                     <a class="nav-link" th:href="@{/admin/gastos}">Ver Todos los Gastos</a>
                 </li>
